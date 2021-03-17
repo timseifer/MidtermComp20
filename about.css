@@ -36,7 +36,7 @@ img {
     color: #000;
 	background-size: contain;
 	background-size: cover;
-	background-image: url(/assets/bg-about.jpg);
+	background-image: url(assets/bg-about.jpg);
 	height: 30%;
     line-height: 600px;
     text-align: center;
