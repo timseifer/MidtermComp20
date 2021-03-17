@@ -1,0 +1,87 @@
+/* Boiler plate design css three rows */
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #666;
+}
+#container {
+	width: 100vw;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    height: 300%;
+    display:table;
+    margin:0 auto;
+}
+
+#top, #middle, #bottom, #middle-bottom, #grid, #middle-top, #total-bottom{
+    display:table-row;
+    background:#005F90;
+}
+
+h2{
+padding-left: 5%;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#top {
+    color: #000;
+	background-size: contain;
+	background-size: cover;
+	background-image: url(/assets/bg-about.jpg);
+	height: 30%;
+    line-height: 600px;
+    text-align: center;
+    font-size: 300%;
+}
+
+#middle-bottom {
+	height: 101%;
+	display: grid;
+    grid-template-columns: auto auto auto auto;
+	gap: 5%;
+    color:#fff;
+	background-color: #005F90;
+	padding-right: 100px;
+    padding-left: 100px;
+}
+#grid{
+	height: 90%;
+	display: grid;
+    grid-template-columns: auto auto auto;
+	gap: 5%;
+    color:#fff;
+	background-color: #fff;
+	padding-right: 100px;
+    padding-left: 100px;
+}
+#middle-top {
+    color: #fff;
+    padding: 5%;
+    font-size: 200%;
+    text-align: left;
+	height: 5%;
+	background-color: #005F90;
+}
+
+#bottom{
+    text-align: center;
+    color:#fff;
+	height: 6%;
+    background-color: #005F90;
+}
+#total-bottom{
+    color: #000;
+    font-size: 200%;
+    text-align: center;
+    height: 5%;
+    background-color: #fff;
+}
