@@ -10,10 +10,16 @@
   <link rel="stylesheet" href="about.css">
 </head>
 <body>
-  <object type="text/html" data="assets/header.html" width="100%" height="auto"></object>
-  	<script language = "javascript">
-	</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+      $(document).ready( function() {
+          $("#container1").load( "assets/header.html" );
+          console.log('Done');
+      });
+  </script>
   <div id="container">
+    <div id ="container1">
+    </div>
     <div id="top" style="text-align:center vertical-align">
       <h1>
       Our History

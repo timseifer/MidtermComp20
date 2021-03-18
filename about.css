@@ -8,6 +8,10 @@ body, html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #666;
 }
+#container1 {
+    width:auto;
+    height:auto;
+}
 #container {
 	width: 100vw;
     border-left: 1px solid #ddd;
