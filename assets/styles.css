@@ -52,7 +52,7 @@
 #footer-section .footer .footer-links ul li:first-child{border-left:0}
 #footer-section .footer .footer-social{margin-top:20px;margin-bottom:20px}
 #footer-section .footer .footer-social ul li{display:inline-block;list-style:none;padding-left:5px;padding-right:5px;width: 30px}
-#footer-section .footer .copyright{color:#fff;}
+#footer-section .footer .copyright{color:#fff; text-align: center}
 
 
 

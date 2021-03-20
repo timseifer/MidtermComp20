@@ -1,0 +1,135 @@
+Home page
+	Columns
+		h1: Now hiring!
+			https://live.staticflickr.com/5211/5387207067_ed51403f50_b.jpg
+			Join our fantastic team of security specialists.
+			We are absolutely the best.
+			Seriously.
+			
+		h1: Latest technology
+			https://live.staticflickr.com/28/54397364_f60be34ce1_b.jpg
+			When it comes to keeping you safe, nothing but the best will do.
+			We use the latest, cutting-edge technology available on the market to make sure our operations are at least 30% successful.
+		
+		h1: Patrols
+			https://live.staticflickr.com/8149/7677123686_b443285c8c_b.jpg
+			When it comes to walking, we're on it.
+			Just look at these two!
+			Very professional.
+
+		h1: Trained dogs
+			https://live.staticflickr.com/1/1126630_2d6a2caf67.jpg
+			Our fearsomely trained dogs are absolutely the best when it comes to sniffing out food.  If you suspect food may be in your viscinity, you NEED our dogs to protect you.
+		
+	Counts
+		5 Days in Business
+		0 Fortune 500 Clients
+		1 Git Repository
+		1423 Cups of Coffee Drank
+		
+	Clients speak
+		Wow!  Best service ever!  Fantastic job!  Will book again 100%!
+		Dhiraj Chakravorty
+		Marketing Specialist Extraordinaire
+		
+		Who are you?
+		Steve
+		Random guy on the street
+		
+		Stop calling me!
+		Unknown
+		Number dialed by cat
+	
+Services
+	Services that make magic happen
+		- Healthcare
+			When you need people to secure a hospital, a patient, or just a single entrance - we are the people to call!
+		- Commercial
+			
+		- Birthday parties
+
+	all: bg: /assets/src_bg.png
+	all: in orange box: same content as categories above
+	
+	Healthcare
+		https://live.staticflickr.com/3417/3569527904_bf539eb26b_b.jpg
+		main text:
+			h1: Hospital Safety Requires Responsive Security Services
+
+			The safety and security in healthcare establishments is a top priority.  Let us balance patient safety with hospital safety, as well as all the confidentiality requirements, governmental and accreditation standards, and patient satisfaction scores that frequently give people headaches.
+
+			Failing in this can cause loss of reputation and a generally bad time. We can take care of that.
+
+			h1: Specialized Service Tailored to Your Healthcare Needs
+
+			People trust us because we say so because this is our website.  Your tailored hospital security service includes:
+			- Highly trained, but slightly overweight, specialist who may or may not know how to shoot.
+			- Unparalleled customer service when/if you can reach us.
+			- Customized security programs to help you not cry.
+
+	Commercial
+		https://live.staticflickr.com/4359/37014793661_552aba0f40_b.jpg
+		main text:
+			
+			h1:Your Partner for Safe and Enjoyable Shopping Experiences
+			
+			Retail people, their employees, shoppers, and even food court "foodies" want to feel safe and sound when doing their thing. If you have an incident, they will probably never come back to your store ever again.
+			
+			Shopping centers and malls have unique things that should be taken into account when designing a security system. This means you need us because we have lots of imaginary experience providing retail security solutions.
+			
+			h1:Our Retail Security Professionals Put Your Customers' Safety First
+
+			We get you and have days of experience providing barely skilled security professionals who deliver white-ish glove service to the mall and shopping center industry. Our shopping mall officers can:
+			- Ride on those Segway things while looking completely non-menacing
+			- Attempt to control crowds through the loudspeaker
+			- Attempt to deter theft
+			- Respond fast-ish when someone IS stealing something
+			- Assist in medical emergencies by dialing 911
+			- Find lost children using candy and vans
+			- Patrol parking areas and sleep in their car
+
+
+	Bdays
+		https://live.staticflickr.com/1487/25956072643_7b81a63f77_b.jpg
+		main text:
+			h1:Unparalleled safety
+
+			Awesome Security Services will attempt to look menacing while guarding any presents that your brat receives for his special day. We offer:
+			- Armed or un-armed bouncer services
+			- Cootie protection
+			- Balloon animal making
+			 
+			h1: Unrivaled Training & Resources
+
+			Birthdays can be intense and full of hazards. We are a completely uncertified contract security provider that offers training courses in critical birthday safety areas:
+			- Spotting clowns/mimes
+			- Protecting the cake
+			- Band Aid application
+
+	
+
+About
+	History
+		Awesome Security Services has a very rich tradition, going back as far as a couple of days.
+		...
+		That's about it.
+		
+	Meet the Team
+		Tim Seifert
+		https://media-exp1.licdn.com/dms/image/C4D03AQG8XTQO5YJH7Q/profile-displayphoto-shrink_800_800/0/1607547351673?e=1621468800&v=beta&t=BLzmq4n9Pwk3iS8jYX81PyE9OMGpy5X-lIxo8GLxlH4
+		Sales and Awesomeness
+		
+		Dhiraj Chakravorty
+		https://media-exp1.licdn.com/dms/image/C4D03AQEBeQpEAkzGiQ/profile-displayphoto-shrink_800_800/0/1596737173670?e=1621468800&v=beta&t=dbduBs7sInfL5_pCe-J6ZdXWDU6C2HFveex-V6nX3eg
+		Marketing Specialist Extraordinaire
+		
+		Loren Mahia
+		https://media-exp1.licdn.com/dms/image/C4D03AQHkx-G9aNJDFQ/profile-displayphoto-shrink_800_800/0/1611695681131?e=1621468800&v=beta&t=TnNUCjJjV8lw0NJZNAvvNGs7kQPI1Vlp8tjTljIR19c
+		Missing Services Specialist 
+				
+		Alex Shulman
+		https://media-exp1.licdn.com/dms/image/C4E03AQGvl7jilPgvwA/profile-displayphoto-shrink_800_800/0/1534865699122?e=1621468800&v=beta&t=eLvkwCjmccmKeubnZG-FsrPm0TWXNdLELJRTqHMu0dM
+		Customer Outreach.. sometimes
+
+Contact
+	contact form and a random address
