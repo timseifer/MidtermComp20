@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Security Services Website</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$("#container1").load( "assets/header.html" );
+			console.log('Done');
+		});
+	</script>
+  	<script language = "javascript">
+	</script>
+<script>
+
+		function populate_array(menu){
+			menu.push("<div style='font-size:large;'>High Level Security: 30 personell - $<div id='value4'>12000</div></div>"+'<br>'+"<div style='font-size:large;'>Security Insurance - $2,000</div>" + '<br>');
+			menu.push("<div style='font-size:large;'>High Level Security: 20 personell - $<div id='value4'>7000</div></div>"+'<br>'+"<div style='font-size:large;'>Security Insurance - $700</div>" + '<br>');
+			menu.push("<div style='font-size:large;'>High Level Security: 10 personell - $<div id='value4'>5000</div></div>"+'<br>'+"<div style='font-size:large;'>Security Insurance - 500</div>" + '<br>');
+			menu.push("<div style='font-size:large;'>Security Advisor: 1 personell - $<div id='value4'>1000</div></div>"+'<br>');
+		}
+		function myFunction(value){
+			var menu = new Array();
+			populate_array(menu);
+			document.getElementById("demo").innerHTML = menu[value];
+			window.scrollTo(0,document.body.scrollHeight);
+				$("#click").css('visibility', 'visible');
+				$("#lname").css('visibility', 'visible');
+				$("#identifier").css('visibility', 'visible');
+		}
+		function changeValues(){
+			console.log("button pressed");
+			var text = $('#lname').val();
+			console.log(text);
+			if(text === "" || isNaN(text) || text == "0"){
+				alert("You Provided an Invalid Number");
+			}else{
+				var text2 = $("#value4").text();
+				console.log(text2);
+				var string = parseFloat(parseInt(text2)* (parseInt(text)*1.15)).toFixed(2);
+				console.log(string);
+				$("#value4").text(string);
+			}
+		}
+</script>
+
+	    <div id ="container1">
+		</div>
+	<h1 style="text-align: center; background-color: #5B5941; width: 50%;  margin: auto; color: #fff;">
+		World Class Service
+	</h1>
+	<h2 style="text-align: center; background-color: #CDD7D6; width: 20%;  margin: auto; position: relative;">
+			Since 2021
+	</h2>
+	<div class="container">
+		<div id="item3">
+			Musical Events
+		</div>
+		<div id="item3">
+			High Security Government Agencies
+		</div>
+		<div id="item3">
+			Venues and Othe Events
+		</div>
+		<div id="item3">
+			Individual Security
+		</div>	
+	</div>
+	<div class="container">
+		<div id="item">
+			<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div id="item">
+			<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div id="item">
+			<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+		<div id="item">
+			<div class="text">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div>
+	</div>
+		<div class="container">
+			<button id="item2" onclick="myFunction(0)">
+				Maximum Security
+			</button>
+			<button id="item2" onclick="myFunction(1)">
+				Medium Security
+			</button>
+			<button id="item2" onclick="myFunction(2)">
+				Light Security
+			</button>
+			<button id="item2" onclick="myFunction(3)">
+				Advisor
+			</button>
+		</div>
+			<p id="demo"></p>
+			<br><br>
+			<div class="input">
+			<label for="lname" id="identifier" class="hidden" style="font-size: 16px;">Duration in Hours: &nbsp; </label>
+			<input type="text" id="lname" class="hidden" name="lname">
+			<button id="click" class="hidden" onclick="changeValues()"></button>
+			</div>
+
+</body>
+</html>
