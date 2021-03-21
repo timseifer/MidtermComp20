@@ -1,0 +1,68 @@
+#container1 {
+    max-width:auto;
+    height:auto;
+}
+
+.container{
+	margin-top: auto;
+	position: relative;
+	flex-direction: row;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding:5px;
+}
+
+.text{
+	padding: 5%;
+}
+
+body {
+	%background: #005F90;
+	background-image: url('assets/srv_bg.png');
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+span.a {
+	display: inline;
+	width: 48%;
+	height: 330px;
+	float:right;
+}
+
+span.b {
+	display: inline-block;
+	width: 50%;
+	height: 330px;
+	%float:left;
+
+}
+
+h1 {
+  background-color: #868686;
+}
+
+p.a {
+
+	background-color: #DDDDDD;	
+	
+}
+
+h2.a {
+
+	background-color: #DDDDDD;	
+	
+}
+
+.floatRight{float:right;margin-left:20px}
+
+#middle-bottom {
+	height: 101%;
+	display: grid;
+    grid-template-columns: auto auto;
+	gap: 1%;
+    color:#fff;
+	background-color: #005F90;
+	padding-right: 5px;
+    padding-left: 5px;
+}
