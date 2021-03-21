@@ -49,3 +49,8 @@
   background-color: #fff;
   min-height: 300px;
 }
+
+#container1 {
+  max-width:auto;
+  height:auto;
+}
