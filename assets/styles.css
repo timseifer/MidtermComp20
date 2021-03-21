@@ -28,7 +28,6 @@
   border-radius: 1px;
   position: relative;
   margin-top: 20px;
-  width: 80px;	  
   font-family:"Gill Sans", Helvetica, Arial, "sans-serif";
 }
 
@@ -39,7 +38,7 @@
 /*Setting up the spacing*/
 #header-section .header-right {float: right;padding-right: 10%;}
 #header-section .header-logo {position:absolute;left: 50%;margin-left: -40px;}
-#header-section .header-left {float: left;padding-left: 10%;}
+#header-section .header-left {float: left;padding-left: 20%;}
 
 
 
@@ -127,11 +126,10 @@ button,input{overflow:visible}button,select{text-transform:none}
 
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
 
-@media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (min-width : 1024px ){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
 
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
 
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 
 a{background-color:transparent}a:active,a:hover{outline-width:0}
-
