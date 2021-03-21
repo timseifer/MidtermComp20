@@ -50,7 +50,9 @@
   min-height: 300px;
 }
 
-#container1 {
+#container1 #container2{
   max-width:auto;
   height:auto;
 }
+
+
