@@ -46,6 +46,7 @@
 /*Footer styling*/
 #footer-section{background-color:#005F90}
 #footer-section .footer{padding-top:20px;padding-bottom:20px;text-align:center}
+#footer-section .footer-logo {position:absolute;}
 #footer-section .footer .footer-links ul li{display:inline-block;list-style:none;padding-left:10px;padding-right:10px;border-left:2px solid #fff}
 #footer-section .footer .footer-links ul li a{color:#fff;font-size:14px}
 #footer-section .footer .footer-links ul li:first-child{border-left:0}
@@ -74,32 +75,6 @@ body,html{ margin: auto;
 
 
 
-
-@media screen and (max-width: 700px) {
-/*
-	.column { 		width: 100%;	  }
-	.header {  height: auto;}  
-	.header a {
-		float: none;
-		display: block;
-		text-align: center; 
-		margin-top: 0px;
-		padding: 10px;
-	    text-decoration: none;
-	    font-size: 20px; 
-	    line-height: 25px;
-		width: auto;	  
-	}
-  .header a.logo {
-	    top: -10px;
-	    text-align: center; }
-
-  .header-right { float: none; }
-
-.spacer { height: 220px;}
-*/
-}
-
 .w3-button:hover{color:#000!important;background-color:#ccc!important}
 button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
 button,input{overflow:visible}button,select{text-transform:none}
@@ -109,27 +84,17 @@ button,input{overflow:visible}button,select{text-transform:none}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
 .w3-bar .w3-button{white-space:normal}
 
-.w3-large{font-size:18px!important}
 
-.w3-teal,.w3-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.uparrow,.uparrow:hover{color:#000!important;background-color:#F67C0A!important}
 
-.w3-tooltip,.w3-display-container{position:relative}.w3-tooltip .w3-text{display:none}.w3-tooltip:hover .w3-text{display:inline-block}
 .w3-right{float:right!important}
 .w3-xlarge{font-size:24px!important}
 
-@media (max-width:1205px){.w3-auto{max-width:95%}}
 
-@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
-.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
-.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
-.w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
 
-@media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+@media (max-width : 1200px ){#header-section .header-left {float: left;padding-left: 15%;} #header-section .header-right {float: right;padding-right: 8%;}}
 
-@media (min-width : 1024px ){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (max-width : 1024px ){#header-section .header-left {float: left;padding-left: 5%;} #header-section .header-right {float: right;padding-right: 4%;}}
 
-@media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
-
-@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 
 a{background-color:transparent}a:active,a:hover{outline-width:0}
