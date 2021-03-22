@@ -3,17 +3,138 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <title>Contact us</title>
+	<link id="css-styles" rel="stylesheet" href="assets/styles.css" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title>Security Services Website</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.contact-icon {
+  padding: 10px;
+  background: #005F90;
+  color: #fff;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #005F90;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #005F90;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+	.coolify{padding-bottom: 5px; background-color: #005F90}
+.column {
+  float: left;
+  width: 49%;
+
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+@media screen and (max-width : 985px )
+{
+    .column {
+		display:flex;
+		align
+		width:99%
+		
+	}
+}
+	@media screen and (max-width : 790px )
+{
+	.column img{width: 200%}
+}
+</style>
 </head>
 
 <body>
-  	<script language = "javascript">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script type="text/javascript">
+      	$(document).ready( function() {
+          	$("#container1").load( "assets/header.html" );
+          	console.log('Done');
+      	});
+  	</script>
+  <div id="container">
+    <div id ="container1">   </div>
+<h1 style="text-align: center;">Contact form</h1>
+	<div class="row">
+		<div class="column"><img src="assets/map.jpg" alt="img" style="float:right; max-width: 805px"/></div>
+	
+		<div class="column" style="background-color: #fff">
+			<form action="#" style="width:500px;float:left">
+			  <h2 style="text-align: left; padding-left: 5px">Send us a message!</h2>
 
+				 <div class="input-container coolify">
+					<i class="fa fa-user contact-icon"></i>
+					<input class="input-field" type="text" placeholder="Name" name="name" required>
+				 </div>
+				 <div class="input-container coolify">
+					<i class="fa fa-users contact-icon"></i>
+					<input class="input-field" type="text" placeholder="Organization" name="org" required>
+				 </div>
+				 <div class="input-container coolify">
+					<i class="fa fa-envelope contact-icon"></i>
+					<input class="input-field" type="text" placeholder="Email" name="email" required>
+				 </div>
+				 <div class="input-container coolify">
+					<i class="fa fa-phone contact-icon"></i>
+					<input class="input-field" type="phone" placeholder="Phone number" name="pwd" required>
+				 </div>
+				 <select class="input-container" id="country" name="country" style="height: 40px">
+					<option value="usa">USA</option>
+					<option value="canada">Canada</option>
+					<option value="mexico">Mexico</option>
+				</select>
+
+				<textarea class="input-container" id="subject" name="subject" placeholder="Message" style="height:200px; font-size: 14px"></textarea>
+
+				<button type="submit" class="btn">Send message</button>
+			</form>
+	</div>
+	</div>
+	  <span><p></p></span>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$('#container2').load( 'assets/footer.html' );
+			console.log('Done');
+		});
 	</script>
-	This is the contact page
+			<div id ="container2"></div>
+</div>
 </body>
 </html>

@@ -2,6 +2,12 @@
     max-width:auto;
     height:auto;
 }
+
+#container2 {
+    max-width:auto;
+    height:auto;
+}
+
 .container{
 	margin-top: auto;
 	position: relative;
@@ -26,23 +32,60 @@ span.a {
 	display: inline;
 	width: 48%;
 	height: 330px;
-	float:right;
+	%float:right;
 }
 
 span.b {
 	display: inline-block;
-	width: 50%;
+	width: 69%;
 	height: 330px;
 	float:left;
 }
 
-h1 {
+h1.a {
   background-color: #868686;
+  font-size: 50px;
+  font-weight: bold;
 }
+
+h1.b {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+h1.h {
+  font-size: 69px;
+  font-weight: bold;
+  color: #F67C0A;
+  text-align:center;
+  font-family: 'Trebuchet MS', sans-serif
+}
+
+h1.c {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+}
+
 
 p.a {
 
 	background-color: #DDDDDD;	
+	
+}
+
+p.b {
+
+	font-weight: bold;
+	
+}
+
+h2.b {
+
+	font-size: 33px;
+	%font-weight: bold;
+	color: white;
 	
 }
 
@@ -56,11 +99,172 @@ h2.a {
 
 #middle-bottom {
 	height: 101%;
+	width: 45%
 	display: grid;
     grid-template-columns: auto auto;
 	gap: 1%;
     color:#fff;
 	background-color: #005F90;
+	background-image: url('assets/srv_bg.png');
 	padding-right: 5px;
     padding-left: 5px;
+}
+
+.row:after{
+	width:100%;
+	text-align:center;
+	padding:5px;
+	clear: both;
+	display: table;
+}
+
+.col1{
+	width:48%;
+	height:500px;
+	text-align:center;
+	%padding:2px;
+	%margin:2px;
+	%border:1px solid gray;
+	display:inline-block;
+	float:left;
+}
+.col2{
+	width:48%;
+	height:500px;
+	text-align:center;
+	%padding:2px;
+	%margin:2px;
+	display:inline-block;
+	float:right;
+}
+
+.row2{
+	width:100%;
+	height: 333px;
+	text-align:center;
+	padding:5px;
+	clear: both;
+	display: table;
+	background-color: #005F90;
+
+}
+
+.col3{
+	width:20%;
+	height:111px;
+	text-align:center;
+	%padding:2px;
+	%margin:2px;
+	border-right:1px solid white;
+	display:inline-block;
+	%float:left;
+}
+
+.col4{
+	width:20%;
+	height:111px;
+	text-align:center;
+	%padding:2px;
+	%margin:2px;
+	%border:1px solid gray;
+	display:inline-block;
+	%float:left;
+}
+
+.row3{
+	width:100%;
+	height:393px;
+	text-align:center;
+	padding:5px;
+	clear: both;
+	display: inline-table;
+	background-color: #486EBA;
+;
+
+}
+
+.col5{
+	width:30%;
+	height:200px;
+	text-align:center;
+	%padding:2px;
+	margin:11px;
+	border:1px solid white;
+	background-color: white;
+	display:inline-block;
+	%float:left;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  %border:1px solid black;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }

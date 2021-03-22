@@ -21,72 +21,196 @@
 			console.log('Done');
 		});
 	</script>
+	
+<div id = "container">
+	
 	<div id ="container1">
     </div>
+	
+	<h1 class = "h">Awesome Security Services</h1>
+	
+	<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	<div class="numbertext">1 / 3</div>
+	<img src="collin-armstrong-8FxJi5wuwKc-unsplash.jpg" style="width:100%" height = 690>
+	<div class="text">By Collin Armstrong on Unsplash</div>
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">2 / 3</div>
+	<img src="https://live.staticflickr.com/73/184665954_6e032f5ac8_o.jpg" class = "center"  height = 690>
+	<div class="text">"Bank Security Guard" by Brad & Ying is licensed under CC BY 2.0</div>
+	</div>
+
+	<div class="mySlides fade">
+	<div class="numbertext">3 / 3</div>
+	<img src="https://live.staticflickr.com/8038/7905622718_dde8336e49_b.jpg" style="width:100%"  height = 690>
+	<div class="text">"Segway Security" by MTSOfan is licensed under CC BY-NC-SA 2.0</div>
+	</div>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	</div>
+
+	<script>
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 6900); // Change image every 2 seconds
+	}
+</script>
+	
+
+	<div class = "row">
+	<div class = "col1">	
+	
 	<img src="https://live.staticflickr.com/5211/5387207067_ed51403f50_b.jpg" alt="Home Image"
 			width = 100%>
 			
-	<img src="https://live.staticflickr.com/5211/5387207067_ed51403f50_b.jpg" alt="Home Image"
-			width = 50%>
+	</div>
+	<div class = "col2">
 	<span class="a">
-	<h1 >Now hiring!</h1>
+	<h1 class = "a">Now hiring!</h1>
 	<h2 class = "a">
 		Join our fantastic team of security specialists.
 		<br>We are absolutely the best.
 		<br>Seriously.
 	</h2>
 	</span>
+	</div>
+	</div>
 	
-	
-	<div id = "middle-bottom">
-	<div>
+	<div class = "row">
+	<div class = "col1">
 	<span class = "b">
-	<h1>Latest technology</h1>
-	<p class = "a">
+	<h1 class = "a">Latest technology</h1>
+	<h2 class = "a">
 		When it comes to keeping you safe, nothing but the best will do.
 		<br>We use the latest, cutting-edge technology available on the market to make sure our operations are at least 30% successful.
-	</p>
+	</h2>
 	</div>
-	<span class = "b">
-	<div>
-	<img src="https://live.staticflickr.com/28/54397364_f60be34ce1_b.jpg" alt="Home Image" >
-			<!--width = 48% style = "float:right";-->
+	</span>
+	<div class = "col2">
+	<img src="https://live.staticflickr.com/28/54397364_f60be34ce1_b.jpg" alt="Home Image"
+			width = 100% style = "float:right"; >
 	</div>	
-	
-	
-	<div id = "middle-bottom">
-	<div>
-	<img src="https://live.staticflickr.com/8149/7677123686_b443285c8c_b.jpg" alt="Home Image">
-			<!--width = 50% style = "float:left";-->
 	</div>
-	<div>
-	<h1 >Patrols</h1>
-	<p class = "a">
+	
+	<div id = "row">
+	<div class = "col1">
+	<img src="https://live.staticflickr.com/8149/7677123686_b443285c8c_b.jpg" alt="Home Image"
+			width = 100% style = "float:left";>
+	</div>
+	<div class = "col2">
+	<span class = "a">
+	<h1 class = "a" >Patrols</h1>
+	<h2 class = "a">
 		When it comes to walking, we're on it.
 		<br>Just look at these two!
 		<br>Very professional.
-	</p>
+	</h2>
+	</span>
 	</div>
 	</div>
 	
-	<br><br>
-	<div id = "middle-bottom">
-	<div>
-	<h1>Trained dogs</h1>
-	<p class = "a" >
+	<div class = "row">
+	<div class = "col1">
+	<span class = "b">
+	<h1 class = "a">Trained dogs</h1>
+	<h2 class = "a" >
 		Our fearsomely trained dogs are absolutely the best when it comes to sniffing out food.  If you suspect food may be in your viscinity, you NEED our dogs to protect you.
-	</p>
+	</h2>
+	</span>
 	</div>
-	<div>
-	<img src="https://live.staticflickr.com/1/1126630_2d6a2caf67.jpg" alt="Home Image">
+	<div class = "col2">
+	<img src="https://live.staticflickr.com/1/1126630_2d6a2caf67.jpg" alt="Home Image"
+			width = 100% height = 100% style = "float:right";>
 	</div>
 	</div>
+	
+	<div class = "row2">
+	<h1 class = "b">Some count that matters</h1>
+	<p style="color:White;">Our achievement in the journey depicted in numbers</p>
+	<div class = "col3">
+	<h2 class = "b">5</h2>
+	<p style="color:White;">Days in Business</p>
+	</div>
+	
+	<div class = "col3">
+	<h2 class = "b">0</h2>
+	<p style="color:White;">Fortune 500 Clients</p>
+	</div>
+	
+	<div class = "col3">
+	<h2 class = "b">1</h2>
+	<p style="color:White;">Git Repository</p>
+	</div>
+	
+	<div class = "col4">
+	<h2 class = "b">1423</h2>
+	<p style="color:White;">Cups of Coffee Drank</p>
+	</div>
+	</div>
+	
+	<div class = "row3">
+	<h1 class = "c">Our Clients Speak</h1>
+	<p>We have been working with clients around the world</p>
+	
+	<div class = "col5">
+	<h4>Wow! <br> Best service ever! <br> Fantastic job! <br> Will book again 100%!</h4>
+	<p class = "b">-Dhiraj Chakravorty</p>
+	<p>Marketing Specialist Extraordinaire</p>
+	</div>
+	
+	<div class = "col5">
+	<!--<h4>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	&nbsp; &nbsp; &nbsp; &nbsp; Who are you?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h4>-->
+	<h4>Who are you?<br><br><br><br></h4>
+	<p class = "b">-Steve</p>
+	<p>Random Guy on Street</p>
+	</div>
+	
+	<div class = "col5">
+	<!--<h4>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	&nbsp; &nbsp; &nbsp; Stop calling me!&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h4>-->
+	<h4>Stop calling me!<br><br><br><br></h4>
+	<p class = "b">-Unknown</p>
+	<p>Number dialed by cat</p>
+	</div>
+	</div>
+	
 	<script type="text/javascript">
 		$(document).ready( function() {
 			$('#container2').load( 'assets/footer.html' );
 			console.log('Done');
 		});
 	</script>
-		<div id="container2"></div>
+			<div id ="container2"></div>
+	
+	
+</div>
+
 </body>
 </html>
