@@ -4,12 +4,20 @@
 	<title>Awesome Security Services</title>	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link id="css-styles" rel="stylesheet" href="https://timseifer.github.io/MidtermComp20/assets/styles.css" type="text/css" media="all">
+	<link id="css-styles" rel="stylesheet" href="styles.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 	
 <body>
+	<script type="text/javascript">
+		function myFunction() {
+		  var x = document.getElementById("header-rightmenu");
+		  if (x.className === "header-right") {
+			x.className += ".responsive";
+		  } else {	x.className = "header-right"; }
+	</script>
+	
 	<section id="header-section">
 	<div class="header">
 		<div class="header-left">
@@ -18,15 +26,20 @@
 			<a href="https://www.google.com" class="fa fa-google" style="width: 30px;"></a>
 			<a href="https://www.linkedin.com" class="fa fa-linkedin" style="width: 30px;"></a> 
 		</div>
+		
 		<div class="header-logo"><a href="https://timseifer.github.io/MidtermComp20/index.html" class="logo"> <img alt="Image" src="https://timseifer.github.io/MidtermComp20/assets/AwesomeSecServ.png" height="80px"> </a></div>
-	    <div class="header-right">
-		 	<a href="https://timseifer.github.io/MidtermComp20/index.html" target="_self">Home</a>
+	    
+		<div class="header-right" id="header-rightmenu">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>	 	
+			<a href="https://timseifer.github.io/MidtermComp20/index.html" target="_self">Home</a>
 		    <a href="https://timseifer.github.io/MidtermComp20/services.html" target="_self">Services</a>
 			<a href="https://timseifer.github.io/MidtermComp20/pricing.html" target="_self" title="Services">Pricing </a>
 		    <a href="https://timseifer.github.io/MidtermComp20/about.html" target="_self">About</a>
 		    <a href="https://timseifer.github.io/MidtermComp20/contact.html" target="_self">Contact</a>
 	    </div>
+	 
 	</div>
+	
 	</section>
 </body>
 </html>
