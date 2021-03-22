@@ -106,7 +106,6 @@ h2.a {
 	width:48%;
 	height:500px;
 	text-align:center;
-	%border:1px solid gray;
 	display:inline-block;
 	float:left;
 }
@@ -114,8 +113,6 @@ h2.a {
 	width:48%;
 	height:500px;
 	text-align:center;
-	%padding:2px;
-	%margin:2px;
 	display:inline-block;
 	float:right;
 }
@@ -135,8 +132,6 @@ h2.a {
 	width:20%;
 	height:111px;
 	text-align:center;
-	%padding:2px;
-	%margin:2px;
 	border-right:1px solid white;
 	display:inline-block;
 }
