@@ -1,4 +1,5 @@
 #first-image{
+    background-image: url("assets/srv_bg.png");
     min-height: 10px;
 }
 #textbox{
@@ -26,7 +27,7 @@
     bottom: 240px;
 }
 #sub{
-    color: aquamarine;
+    color:#F67C0A;
 }
 #main-h1{
     font-weight: 900;
