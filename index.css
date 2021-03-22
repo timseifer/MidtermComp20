@@ -1,12 +1,7 @@
-#container1 {
+#container1 #container2{
     max-width:auto;
     height:auto;
 }
-#container2 {
-	max-width:auto;
-    height:auto;
-}
-
 .container{
 	margin-top: auto;
 	position: relative;
@@ -22,7 +17,7 @@
 }
 
 body {
-	%background: #005F90;
+	background: #005F90;
 	background-image: url('assets/srv_bg.png');
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -38,8 +33,7 @@ span.b {
 	display: inline-block;
 	width: 50%;
 	height: 330px;
-	%float:left;
-
+	float:left;
 }
 
 h1 {

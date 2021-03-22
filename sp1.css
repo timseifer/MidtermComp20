@@ -1,7 +1,5 @@
 #first-image{
     min-height: 10px;
-;
-    
 }
 #textbox{
     width: 25%;
@@ -34,4 +32,9 @@
     font-weight: 900;
     font-size: x-large;
     color: #fff;
+}
+
+#container1 #container2{
+    width:auto;
+    height:auto;
 }

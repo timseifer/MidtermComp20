@@ -52,7 +52,7 @@
 
 #container1 #container2{
   max-width:auto;
-  height:auto;
+  max-height:auto;
 }
 
 

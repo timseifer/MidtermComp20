@@ -14,6 +14,8 @@
 	padding:5px;
 }
 .text{
+	margin-top: 10%;
+	font-size: 22px;
 	padding: 5%;
 }
 #item{
@@ -26,6 +28,7 @@
 	width: 50%;
 }
 #item2{
+	font-size: medium;
 	border-radius: 25px;
 	height: 500px;
 	margin:5px;
@@ -34,6 +37,7 @@
 	width: 50%;
 }
 #item3{
+	font-size: medium;
 	color: #fff;
 	background-color: #868686;
 	height: 30px;
@@ -84,7 +88,6 @@ button:hover{
 }
 
 input{
-	color: #F67C0A;
 	border-color: #F67C0A;
 }
 .hidden{
