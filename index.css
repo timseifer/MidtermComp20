@@ -55,6 +55,14 @@ h1.b {
   color: white;
 }
 
+h1.h {
+  font-size: 69px;
+  font-weight: bold;
+  color: #F67C0A;
+  text-align:center;
+  font-family: 'Trebuchet MS', sans-serif
+}
+
 h1.c {
   font-size: 50px;
   font-weight: bold;
