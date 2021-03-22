@@ -9,25 +9,24 @@
   <meta name="author" content="">
   <link rel="stylesheet" href="pricing.css">
   <link rel='stylesheet' type="text/css" href="assets/styles.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready( function() {
 			$("#container1").load( "assets/header.html" );
 			console.log('Done');
 		});
 	</script>
-  	<script language = "javascript">
-	</script>
-<script>
+	<script>
 		function populate_array(menu){
 			menu.push("<div style='font-size:large;'>High Level Security: 30 personell - $<div id='value4'>12000</div></div>"+'<br>'+"<div style='font-size:large;'>Security Insurance - $2,000</div>" + '<br>');
 			menu.push("<div style='font-size:large;'>High Level Security: 20 personell - $<div id='value4'>7000</div></div>"+'<br>'+"<div style='font-size:large;'>Security Insurance - $700</div>" + '<br>');
 			menu.push("<div style='font-size:large;'>High Level Security: 10 personell - $<div id='value4'>5000</div></div>"+'<br>'+"<div style='font-size:large;'>Security Insurance - 500</div>" + '<br>');
 			menu.push("<div style='font-size:large;'>Security Advisor: 1 personell - $<div id='value4'>1000</div></div>"+'<br>');
 		}
-		function myFunction(value){
+		function myFunction2(value){
+			console.log("clicked the button");
 			var menu = new Array();
 			populate_array(menu);
 			document.getElementById("demo").innerHTML = menu[value];
@@ -50,7 +49,7 @@
 				$("#putValue").text("Pricing of personell with hours and tax is " + string);
 			}
 		}
-</script>
+	</script>
 
 	    <div id ="container1">
 		</div>
@@ -98,16 +97,16 @@
 		</div>
 	</div>
 		<div class="container">
-			<button id="item2" onclick="myFunction(0)">
+			<button id="item2" onclick="myFunction2(0)">
 				Maximum Security
 			</button>
-			<button id="item2" onclick="myFunction(1)">
+			<button id="item2" onclick="myFunction2(1)">
 				Medium Security
 			</button>
-			<button id="item2" onclick="myFunction(2)">
+			<button id="item2" onclick="myFunction2(2)">
 				Light Security
 			</button>
-			<button id="item2" onclick="myFunction(3)">
+			<button id="item2" onclick="myFunction2(3)">
 				Advisor
 			</button>
 		</div>
