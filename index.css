@@ -1,4 +1,4 @@
-#container1 #container2{
+#container1 {
     max-width:auto;
     height:auto;
 }
@@ -23,7 +23,6 @@
 }
 
 body {
-	background: #005F90;
 	background-image: url('assets/srv_bg.png');
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
@@ -38,7 +37,7 @@ span.b {
 	display: inline-block;
 	width: 69%;
 	height: 330px;
-	float:left;
+
 }
 
 h1.a {
@@ -95,19 +94,6 @@ h2.a {
 
 .floatRight{float:right;margin-left:20px}
 
-#middle-bottom {
-	height: 101%;
-	width: 45%;
-	display: grid;
-    grid-template-columns: auto auto;
-	gap: 1%;
-    color:#fff;
-	background-color: #005F90;
-	background-image: url('assets/srv_bg.png');
-	padding-right: 5px;
-    padding-left: 5px;
-}
-
 .row:after{
 	width:100%;
 	text-align:center;
@@ -120,14 +106,18 @@ h2.a {
 	width:48%;
 	height:500px;
 	text-align:center;
+	%border:1px solid gray;
 	display:inline-block;
+	float:left;
 }
 .col2{
 	width:48%;
 	height:500px;
 	text-align:center;
+	%padding:2px;
+	%margin:2px;
 	display:inline-block;
-	float: right;
+	float:right;
 }
 
 .row2{
@@ -145,6 +135,8 @@ h2.a {
 	width:20%;
 	height:111px;
 	text-align:center;
+	%padding:2px;
+	%margin:2px;
 	border-right:1px solid white;
 	display:inline-block;
 }
@@ -178,14 +170,12 @@ h2.a {
 	display:inline-block;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
 }
 
-/* Caption text */
 .text {
   color: black;
   font-size: 15px;
@@ -197,16 +187,16 @@ h2.a {
   font-weight: bold;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
+.indices {
+  color: #696969;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
+  font-weight:bold;
+  border: 1px solid grey;
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -221,7 +211,6 @@ h2.a {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
