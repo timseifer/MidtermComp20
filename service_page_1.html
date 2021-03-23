@@ -18,6 +18,31 @@
 			console.log('Done');
 		});
 	</script>
+			<script>
+				pics = ["security_guard.jpg", "donuts.jpg","stethescope.jpg"];
+				var pictureIndex=0;
+				$(document).ready(function() {
+					$("#display").mouseover(slideShow);
+				})
+				function slideShow()
+				{
+					console.log("slideshow");
+					$("#display img").fadeOut(2000,nextSlide);
+				}
+				function nextSlide()
+				{
+					pictureIndex++;
+					pictureIndex= pictureIndex == pics.length? 0: pictureIndex;
+					$("#display img").attr("src", "assets/"+pics[pictureIndex]);
+					$("#display img").fadeIn(2000,slideShow);
+				}
+				</script>
+			<script type="text/javascript">
+				$(document).ready( function() {
+					$('#container1').load( 'assets/header.html' );
+					console.log('Done');
+				});
+			</script>
 	<div id ="container1">
     </div>
         <div id="first-image">
@@ -30,7 +55,7 @@
 				Failing in this can cause loss of reputation and a generally bad time. We can take care of that.</p>
 			 <a href="https://timseifer.github.io/MidtermComp20/about.html">Learn more </a>
 			 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			 <a href="https://timseifer.github.io/MidtermComp20/about.html">Watch video</a>
+			 <a href="https://www.youtube.com/watch?v=pI6cQURnFmI">Watch video</a>
 		</div>
 		<div id="display">
 			<img src="https://live.staticflickr.com/3417/3569527904_bf539eb26b_b.jpg" alt="display"  width="35%">

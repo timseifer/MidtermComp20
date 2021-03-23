@@ -18,6 +18,31 @@
 			console.log('Done');
 		});
 	</script>
+			<script>
+				pics = ["birthday.jpg", "birthday2.jpg","birthday3.jpg"];
+				var pictureIndex=0;
+				$(document).ready(function() {
+					$("#display").mouseover(slideShow);
+				})
+				function slideShow()
+				{
+					console.log("slideshow");
+					$("#display img").fadeOut(2000,nextSlide);
+				}
+				function nextSlide()
+				{
+					pictureIndex++;
+					pictureIndex= pictureIndex == pics.length? 0: pictureIndex;
+					$("#display img").attr("src", "assets/"+pics[pictureIndex]);
+					$("#display img").fadeIn(2000,slideShow);
+				}
+				</script>
+			<script type="text/javascript">
+				$(document).ready( function() {
+					$('#container1').load( 'assets/header.html' );
+					console.log('Done');
+				});
+			</script>
 	<div id ="container1">
     </div>
 	<div id="first-image">
@@ -34,7 +59,7 @@
                  </p>
 			 <a href="https://timseifer.github.io/MidtermComp20/about.html">Learn more</a>
              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-			 <a href="https://timseifer.github.io/MidtermComp20/about.html">Watch video</a>
+			 <a href="https://www.youtube.com/watch?v=pI6cQURnFmI">Watch video</a>
 		</div>
 		<div id="display">
 			<img src="assets/bday.jpg" alt="display" width="27%">
