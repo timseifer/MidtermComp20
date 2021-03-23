@@ -98,3 +98,31 @@ input{
 	justify-content: center;
 	padding-bottom: 5%;
 }
+
+
+  @media only screen and (max-width: 600px) {
+	#item3{
+		font-size: 13px;
+		color: #fff;
+		background-color: #868686;
+		height: 30px;
+		margin:50px;
+		border: 5px solid rgb(187, 180, 180);
+		text-align: center;
+		width: 40%;
+	}
+	.text{
+		margin-top: 10%;
+		font-size: 12px;
+		padding: 5%;
+	}
+	.item2{
+		font-size: medium;
+		border-radius: 25px;
+		height: 500px;
+		margin:5px;
+		border: 5px solid rgb(187, 180, 180);
+		text-align: center;
+		width: 40%;
+	}
+  }
